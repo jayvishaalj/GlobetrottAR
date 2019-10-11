@@ -1,41 +1,24 @@
 import 'package:flutter/material.dart';
+import 'Authentication.dart';
+import 'Mapping.dart';
 
-void main() => runApp(MyApp());
+void main(){
+  runApp(new BlogApp());
+}
 
-class MyApp extends StatelessWidget {
+class BlogApp extends StatelessWidget
+{
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+  Widget build(BuildContext context)
+  {
+    return new MaterialApp(
+      title: 'Blog App',
+      theme: new ThemeData(
+          primarySwatch: Colors.pink
       ),
-      home: MyHomePage(title: 'GlobetottAr'),
+      home: Mapping(auth: Auth(),),
     );
   }
-}
 
-class MyHomePage extends StatefulWidget {
-  MyHomePage({Key key, this.title}) : super(key: key);
 
-  final String title;
-
-  @override
-  _MyHomePageState createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-
-        ),
-        ),
-      );
-  }
 }
