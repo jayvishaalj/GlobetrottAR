@@ -1,7 +1,7 @@
 # globetrottar
 
 Social media app for travellers.
-
+A Fun Place for Serious Travellers
 ## Getting Started
 
 This project is a starting point for a Flutter application.
